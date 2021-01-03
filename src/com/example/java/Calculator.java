@@ -11,8 +11,8 @@ public class Calculator {
      * @param args arguments param
      */
     public static void main(String[] args) {
-        String string1 = getInput("Enter a numeric value: ");
-        String s2 = getInput("Enter a numeric value: ");
+        String str1 = getInput("Enter a numeric value: ");
+        String str2 = getInput("Enter a numeric value: ");
         String op = getInput("Choose an operation (+ - * /):");
 
         double result;
@@ -20,16 +20,16 @@ public class Calculator {
         try {
             switch (op) {
                 case "+":
-                    result = addValues(string1, s2);
+                    result = addValues(str1, str2);
                     break;
                 case "-":
-                    result = subtractValues(string1, s2);
+                    result = subtractValues(str1, str2);
                     break;
                 case "*":
-                    result = multiplyValues(string1, s2);
+                    result = multiplyValues(str1, str2);
                     break;
                 case "/":
-                    result = divideValues(string1, s2);
+                    result = divideValues(str1, str2);
                     break;
                 default:
                     System.out.println("Unrecognized operation!");
