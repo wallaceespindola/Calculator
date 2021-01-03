@@ -6,9 +6,13 @@ import static com.example.java.util.MathMethods.*;
 
 public class Calculator {
 
+    /**
+     * My main method
+     * @param args arguments param
+     */
     public static void main(String[] args) {
-        String str1 = getInput("Enter a numeric value: ");
-        String str2 = getInput("Enter a numeric value: ");
+        String s1 = getInput("Enter a numeric value: ");
+        String s2 = getInput("Enter a numeric value: ");
         String op = getInput("Choose an operation (+ - * /):");
 
         double result;
@@ -16,16 +20,16 @@ public class Calculator {
         try {
             switch (op) {
                 case "+":
-                    result = addValues(str1, str2);
+                    result = addValues(s1, s2);
                     break;
                 case "-":
-                    result = subtractValues(str1, str2);
+                    result = subtractValues(s1, s2);
                     break;
                 case "*":
-                    result = multiplyValues(str1, str2);
+                    result = multiplyValues(s1, s2);
                     break;
                 case "/":
-                    result = divideValues(str1, str2);
+                    result = divideValues(s1, s2);
                     break;
                 default:
                     System.out.println("Unrecognized operation!");
